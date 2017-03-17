@@ -1,37 +1,194 @@
 .App-logo {
     animation: App-logo-spin infinite 20s linear;
-    height: 50px;
+    height: 40px;
     width: 50px;
+    margin-left: 50px;
+    margin-top: 10px;
     vertical-align: middle;
     display: inline-block;
 }
 
+/*
+div.transbox {
+    margin: 1px;
+    width: 250px;
+    height : 15px;
+    background-color: #ffffff;
+    border: 2px solid black;
+    opacity: 0.4;
+
+    font-family: Impact, "Arial Grey";
+    font-weight: normal;
+    text-align: center;
+    font-size: 20px;
+    color: #000000;
+
+    
+}
+
+*/
+
 .App-header {
-    text-align: right;
-    background-color: #222;
-    height: 60px;
+    text-align: center;
+    /*background-image:url(a.png);*/
+    background-size: cover;
+    height: 110px;
     padding: 5px 10px;
     color: white;
 }
 
 .App-header h1 {
+    font-family: "Tahoma";
     font-weight: 300;
-    font-size: 26px;
-    margin: 0;
+    font-size: 35px;
+    margin-top: 30px;
     padding: 0;
     vertical-align: middle;
     display: inline-block;
+    color: lightsteelblue
+}
+
+ /* label color */
+   .App label {
+     color:white;
+     font-size: 17px;
+    
+   }
+   /* label focus color */
+   .App input[type=text]:focus + label {
+     color:white;
+     
+     
+   }
+   /* label underline focus color */
+   .App input[type=text]:focus {
+     border-bottom: 1px solid white;
+     box-shadow: 0 1px 0 0 white;
+   }
+
+.App button {
+    background-color: lightslategray;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+
+.App button:hover {
+    background-color: #80CEAB; 
+    color: white;
 }
 
 .App-content {
+    margin-top: 200px;
     padding: 20px;
+    z-index :10;
+    position:relative;
+  
+    
+    
 }
-
+/*
 @keyframes App-logo-spin {
     from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    to { transform: rotate(180deg); }
 }
-
+*/
 .error-toast {
     color: #e74c3c;
+}
+
+
+
+
+
+.crossfade > figure {
+  animation: imageAnimation 30s linear infinite 0s;
+  backface-visibility: hidden;
+  background-size: cover;
+
+  background-position: center center;
+
+  color: transparent;
+
+  height: 100%;
+
+  margin-left:0px;
+  margin-top: 110px;
+
+  opacity: 0;
+
+ position: absolute;
+
+  top: 0px;
+
+  width: 100%;
+
+  z-index: 0;
+
+}
+
+
+
+.crossfade > figure:nth-child(1) { 
+    background-image: url('c.png');
+    background-size: cover;
+    
+     }
+
+.crossfade > figure:nth-child(2) {
+
+  animation-delay: 6s;
+
+  background-image: url('b.png');
+  background-size: cover;
+
+}
+
+.crossfade > figure:nth-child(3) {
+  animation-delay: 12s;
+  background-image: url('d.png');
+  background-size: cover;
+}
+
+.crossfade > figure:nth-child(4) {
+  animation-delay: 18s;
+  background-image: url('b.png');
+  background-size: cover;
+}
+
+
+
+.crossfade > figure:nth-child(5) {
+  animation-delay: 24s;
+  background-image: url('b.png');
+  background-size: cover;
+}
+
+
+
+
+@keyframes
+imageAnimation {  0% {
+animation-timing-function: ease-in;
+
+opacity: 0;
+}
+
+8% {
+animation-timing-function: ease-out;
+opacity: 1;
+
+}
+17% {
+opacity: 1
+
+}
+
+25% {
+opacity: 0
+}
+
+100% {
+opacity: 0
+}
+
 }

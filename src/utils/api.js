@@ -9,7 +9,6 @@ import * as request from 'request-promise'
 
 export const ENDPOINTS = {
 
-    WEATHER_API_URL: 'http://api.apixu.com/v1/current.json',
     PIXABAY_API_URL: 'https://pixabay.com/api/'
 
 }
